@@ -93,7 +93,7 @@ def modify_task_v2(id: int, title: str = None, description: str = None, complete
 
 @app.get("/", tags=["root"])
 def read_root():
-    return {"message": "Welcome to the API. Access versioned endpoints with /apiv1/task/1 or /apiv2/task/1."}
+    return {"message": "Welcome to the API. You can access versioned endpoints by using /v1/tasks/1 or /v2/tasks/1."}
 
 @app.get("/health")
 def health_check():
